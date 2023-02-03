@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #d6dde3;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddStudent">
+   <children>
+      <Button fx:id="exit" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" text="Выход">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableStudent" layoutY="46.0" prefHeight="270.0" prefWidth="700.0" style="-fx-background-color: #ffffed;">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="87.0" text="Номер Зачётной Книжки" />
+          <TableColumn fx:id="FIO" prefWidth="114.0" text="ФИО" />
+            <TableColumn fx:id="groups" prefWidth="106.0" text="Код Группы" />
+            <TableColumn fx:id="birthday" prefWidth="92.0" text="Дата Рождения" />
+            <TableColumn fx:id="login" prefWidth="99.0" text="Логин" />
+            <TableColumn fx:id="password" prefWidth="95.0" text="Пароль" />
+            <TableColumn fx:id="phone" prefWidth="104.0" text="Номер Телефона" />
+        </columns>
+      </TableView>
+      <TextField fx:id="numberAdd" layoutX="8.0" layoutY="323.0" promptText="Номер Зачёной Книжки">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="FIOAdd" layoutX="8.0" layoutY="354.0" promptText="ФИО">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="groupsAdd" layoutX="174.0" layoutY="323.0" promptText="Код Группы">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="birthdayAdd" layoutX="174.0" layoutY="354.0" promptText="Дата Рождения">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="loginAdd" layoutX="335.0" layoutY="323.0" promptText="Логин">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="passwordAdd" layoutX="335.0" layoutY="354.0" promptText="Пароль">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="phoneAdd" layoutX="504.0" layoutY="323.0" promptText="Номер Телефона">
+         <font>
+            <Font name="Comic Sans MS" size="11.0" />
+         </font>
+      </TextField>
+      <Button fx:id="add" layoutX="504.0" layoutY="354.0" mnemonicParsing="false" text="Добавить">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="599.0" layoutY="354.0" mnemonicParsing="false" text="Удалить">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

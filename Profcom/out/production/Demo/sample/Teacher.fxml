@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d6dde3;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Teacher">
+   <children>
+      <Button fx:id="allStudent" layoutX="489.0" layoutY="8.0" mnemonicParsing="false" text="Все студенты">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableGroup" layoutX="-1.0" layoutY="63.0" prefHeight="285.0" prefWidth="600.0" style="-fx-background-color: #ffffed;">
+        <columns>
+          <TableColumn fx:id="number" prefWidth="99.0" text="Номер Группы" />
+          <TableColumn fx:id="people" prefWidth="136.0" text="Количество Человек" />
+            <TableColumn fx:id="spec" prefWidth="203.0" text="Специальность" />
+            <TableColumn fx:id="otdel" prefWidth="161.0" text="Отделение" />
+        </columns>
+      </TableView>
+      <Button fx:id="exit" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" text="Выход">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #d6dde3;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin">
+    <children>
+        <Button fx:id="exit" layoutX="7.0" layoutY="6.0" mnemonicParsing="false" text="Выйти" textFill="#0000cc">
+            <font>
+                <Font name="Comic Sans MS" size="13.0" />
+            </font>
+        </Button>
+        <Button fx:id="addteacher" layoutX="402.0" layoutY="6.0" mnemonicParsing="false" text="Добавить преподавателя" textFill="#0000cc">
+            <font>
+                <Font name="Comic Sans MS" size="13.0" />
+            </font>
+        </Button>
+        <TableView fx:id="tableGroup" layoutY="60.0" prefHeight="340.0" prefWidth="600.0" style="-fx-background-color: #ffffed;">
+            <columns>
+                <TableColumn fx:id="number" prefWidth="95.0" text="Номер группы" />
+                <TableColumn fx:id="people" prefWidth="107.0" text="Кол-во человек" />
+                <TableColumn fx:id="spec" prefWidth="221.0" text="Название специальности" />
+                <TableColumn fx:id="otdel" prefWidth="176.0" text="Отделение" />
+            </columns>
+        </TableView>
+        <Button fx:id="addgroup" layoutX="229.0" layoutY="6.0" mnemonicParsing="false" text="Добавить группу" textFill="#0000cc">
+            <font>
+                <Font name="Comic Sans MS" size="13.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

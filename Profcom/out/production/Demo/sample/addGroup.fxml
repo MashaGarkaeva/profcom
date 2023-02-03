@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: 255,255,255;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddGroup">
+    <children>
+        <TableView fx:id="tableAddGroup" prefHeight="306.0" prefWidth="601.0" style="-fx-background-color: #ffffed;">
+            <columns>
+                <TableColumn fx:id="number" prefWidth="93.0" text="Номер группы" />
+                <TableColumn fx:id="people" prefWidth="131.0" text="Количество человек" />
+            <TableColumn fx:id="spec" prefWidth="192.0" text="Специальность" />
+            <TableColumn fx:id="otdel" prefWidth="184.0" text="Отделение" />
+            </columns>
+        </TableView>
+        <Button fx:id="delete" layoutX="272.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Удалить" />
+        <Button fx:id="add" layoutX="102.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Добавить" />
+        <TextField fx:id="numberAdd" layoutX="14.0" layoutY="317.0" prefHeight="25.0" prefWidth="73.0" promptText="Номер">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+        <TextField fx:id="peopleAdd" layoutX="121.0" layoutY="317.0" prefHeight="25.0" prefWidth="58.0" promptText="Кол-во">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="specAdd" layoutX="218.0" layoutY="317.0" prefHeight="25.0" prefWidth="198.0" promptText="Специальность">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="otdelAdd" layoutX="438.0" layoutY="317.0" promptText="Отделение">
+         <font>
+            <Font name="Comic Sans MS" size="12.0" />
+         </font></TextField>
+      <Button fx:id="exit" layoutX="438.0" layoutY="361.0" mnemonicParsing="false" text="Выйти" />
+    </children>
+</AnchorPane>

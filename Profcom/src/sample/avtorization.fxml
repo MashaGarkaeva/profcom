@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" style="-fx-background-color: #ffffed;" xmlns="http://javafx.com/javafx/8.2.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="229.0" layoutY="39.0" text="Авторизация" textFill="#0000cc">
+         <font>
+            <Font name="Comic Sans MS" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="email" layoutX="209.0" layoutY="125.0" prefHeight="33.0" prefWidth="228.0" promptText="Введите логин">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </TextField>
+      <Label layoutX="145.0" layoutY="131.0" text="Логин:" textFill="#0000cc">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="209.0" layoutY="188.0" prefHeight="33.0" prefWidth="228.0" promptText="Введите пароль">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="144.0" layoutY="194.0" text="Пароль:" textFill="#0000cc">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn" layoutX="268.0" layoutY="283.0" mnemonicParsing="false" text="Войти" textFill="#0000cc">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="error" layoutX="195.0" layoutY="339.0" prefHeight="19.0" prefWidth="251.0">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="role" layoutX="226.0" layoutY="238.0" prefHeight="22.0" prefWidth="154.0" promptText="Кто вы?" />
+   </children>
+</AnchorPane>
